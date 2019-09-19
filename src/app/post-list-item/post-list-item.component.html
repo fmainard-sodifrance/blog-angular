@@ -6,4 +6,16 @@
         <p>{{ created_at | date: 'dd/MM/yyyy, HH:mm'}}</p>
     </header>
     <p>{{ content }}</p>
+    <footer>
+        <button class="btn btn-success" 
+                title="Love it"
+                (click)="loveIt()">
+            Love it
+        </button>
+        <button class="btn btn-danger" 
+                title="Don't love it"
+                (click)="dontLoveIt()">
+            Don't love it
+        </button>
+    </footer>
 </div>
